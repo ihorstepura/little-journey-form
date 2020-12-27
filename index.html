@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h2>Little Journey</h2>
+        </div>
+
+        <form class="form" id="form">
+
+            <div>
+                <label>Direction</label>
+            </div>
+
+            <div class="form-control">
+                <input id="departure" placeholder="Departure station" type="text">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <input id="arrival" placeholder="Arrival station" type="text">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div>
+                <label>Cost</label>
+            </div>
+
+            <div class="form-control">
+                <input id="minCost" placeholder="Minimal cost" type="number" required min="0" step="10">
+            </div>
+
+            <div class="form-control">
+                <input id="maxCost" placeholder="Maximal cost" type="number" required min="100" step="10">
+            </div>
+
+            <div class="form-control">
+                <label>Maximal duration</label>
+                <input placeholder="Maximal duration" type="time" required>
+            </div>
+
+            <div>
+                <button type="submit">Search</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
